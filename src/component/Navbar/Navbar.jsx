@@ -7,23 +7,45 @@ function Navbar() {
   return (
     <>
 <div className="w-full bg-primary text-sm">
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-end gap-2 md:gap-6 px-4 py-2">
-    
-    <div className="text-[#88b3ce]">
-      <a href="mailto:singlavikas1979@gmail.com" className="block">
-        RavitiwariXXXX@gmail.com
-      </a>
-      <a href="tel:+91961630xxxx" className="block">
-        +91-961630xxxx
-      </a>
+  <div className="max-w-7xl mx-auto flex flex-row items-center justify-between px-4 py-3">
+
+    {/* Logo */}
+    <a href="/" className="flex-shrink-0">
+      <img src={assets.drlogo} alt="Logo" className="h-12 w-auto md:h-20" />
+    </a>
+
+    {/* Hospital Info - hidden on md and below */}
+    <div className="hidden md:flex flex-col text-white text-left">
+      <span className="text-lg sm:text-xl md:text-2xl font-semibold">
+        Pearly Whites clinic
+      </span>
+      <span className="text-xs sm:text-sm md:text-base">
+        Kapoorthala Chandralok Tower, Aliganj, Lucknow (226024)
+      </span>
     </div>
 
-    <div className="cursor-pointer animate-pulse text-red-500 text-xl">
-      <span>Book an Appointment</span>
+    {/* Contact & CTA */}
+    <div className="flex items-center gap-3">
+
+      {/* Contact - hidden on md and below */}
+      <div className="hidden md:block text-white text-xs sm:text-sm md:text-base text-right">
+        <a href="mailto:RavitiwariXXXX@gmail.com" className="block">
+          RavitiwariXXXX@gmail.com
+        </a>
+        <a href="tel:+91961630xxxx" className="block">
+          +91-961630xxxx
+        </a>
+      </div>
+
+      {/* CTA Button */}
+      <button className="cursor-pointer animate-pulse text-red-500 hover:text-white hover:bg-red-500 text-sm sm:text-base md:text-lg lg:text-xl font-bold border border-red-500 px-3 py-1 rounded-md transition duration-300">
+        Book an Appointment
+      </button>
+
     </div>
-    
   </div>
 </div>
+
 
 
       <nav className="sticky top-0 z-50 flex items-center justify-between px-4 sm:px-8 lg:px-16 py-3 border-b border-gray-200 bg-white shadow-sm transition-all">
@@ -38,7 +60,7 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6 text-gray-700 text-sm lg:text-base">
-          <a href="#" className="hover:text-primary hover:underline transition">
+          <a href="/" className="hover:text-primary hover:underline transition">
             Home
           </a>
           <a href="#" className="hover:text-primary hover:underline transition">

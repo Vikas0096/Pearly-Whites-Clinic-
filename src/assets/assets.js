@@ -1,8 +1,11 @@
 import logo from './logo.svg'
-
+import drlogo from './drlogo.png'
+import hero from './hero.jpg'
 
 export const assets = {
   logo,
+  drlogo,
+  hero,
 }
 
 
