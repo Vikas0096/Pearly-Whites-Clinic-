@@ -1,7 +1,7 @@
 import logo from './logo.svg'
 import drlogo from './drlogo.png'
 import hero from './hero.jpg'
-import Pulpitis from './Pulpitis.jpg'
+import Pulpitis from './pulpitis.jpg'
 import Malocclusion from './Malocclusion.jpeg'
 import ToothSensitivity from './Tooth Sensitivity.jpg'
 import Periodontitis from './Periodontitis.webp'
