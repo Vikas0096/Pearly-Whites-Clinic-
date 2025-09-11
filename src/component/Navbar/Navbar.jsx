@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <>
-<div className="w-full bg-primary text-sm">
+<div className="w-full bg-primary text-sm ">
   <div className="max-w-7xl mx-auto flex flex-row items-center justify-between px-4 py-3">
 
     {/* Logo */}
@@ -48,7 +48,7 @@ function Navbar() {
 
 
 
-      <nav className="sticky top-0 z-50 flex items-center justify-between px-4 sm:px-8 lg:px-16 py-3 border-b border-gray-200 bg-white shadow-sm transition-all">
+      <nav className="sticky text-lg top-0 z-50 font-semibold flex items-center justify-between px-4 sm:px-8 lg:px-16 py-3 border-b border-gray-200 bg-white shadow-sm transition-all">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
           <img
