@@ -11,7 +11,7 @@ import dentalcaries from './dental caries.jpeg'
 import ToothExtractions from './Tooth Extractions.jpeg'
 import ToothColoredFillings from './Tooth-Colored Fillings.jpeg'
 import DentalXrays from './Dental X-rays.jpeg'
-import OralHygieneEducation from './Oral Hygiene Education.PNG'
+import OralHygieneEducation from './Oral Hygiene Education.png'
 import DentalExaminations  from './Dental Examinations & Consultations.webp'
 import ProfessionalTeethCleaning from './Professional Teeth Cleaning.jpeg'
 
