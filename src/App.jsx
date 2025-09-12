@@ -6,7 +6,8 @@ import Home from './pages/Home'
 import Disease from './component/Disease'
 import Facilities from './component/Facilities'
 import AboutDoctor from './component/AboutDoctor'
-import Reviewslider from './component/reviewslider'
+import ReviewSlider from './component/reviewslider'
+
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
   <Disease/>
   <Facilities/>
   <AboutDoctor/>
-    <Reviewslider/>
+    <ReviewSlider/>
     </>
   )
 }
