@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { patientReviews } from '../assets/assets'; 
-const ReviewSlider = () => {
+const PatientReview = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideInterval = 5000;
 
@@ -74,4 +74,4 @@ const ReviewSlider = () => {
   );
 };
 
-export default ReviewSlider;
+export default PatientReview;
