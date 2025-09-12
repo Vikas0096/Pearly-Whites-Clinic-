@@ -59,26 +59,26 @@ function Navbar() {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6 text-gray-700 text-sm lg:text-base">
-          <a href="/" className="hover:text-primary hover:underline transition">
+        <div className="hidden md:flex items-center gap-6 text-primary text-sm lg:text-base">
+          <a href="/" className="hover:text-secondary hover:underline transition">
             Home
           </a>
-          <a href="#" className="hover:text-primary hover:underline transition">
+          <a href="#" className="hover:text-secondary hover:underline transition">
             About Us
           </a>
-          <a href="#" className="hover:text-primary hover:underline transition">
+          <a href="#" className="hover:text-secondary hover:underline transition">
             Facilities
           </a>
-          <a href="#" className="hover:text-primary hover:underline transition">
+          <a href="#" className="hover:text-secondary hover:underline transition">
             Treatment
           </a>
-          <a href="#" className="hover:text-primary hover:underline transition">
+          <a href="#" className="hover:text-secondary hover:underline transition">
             Awards
           </a>
-          <a href="#" className="hover:text-primary hover:underline transition">
+          <a href="#" className="hover:text-secondary hover:underline transition">
             Gallery
           </a>
-          <a href="#" className="hover:text-primary hover:underline transition">
+          <a href="#" className="hover:text-secondary hover:underline transition">
             Contact
           </a>
         </div>

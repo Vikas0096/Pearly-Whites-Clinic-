@@ -4,6 +4,9 @@ import Navbar from './component/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Disease from './component/Disease'
+import Facilities from './component/Facilities'
+import AboutDoctor from './component/AboutDoctor'
+import Reviewslider from './component/reviewslider'
 
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
 
   </div>
   <Disease/>
+  <Facilities/>
+  <AboutDoctor/>
+    <Reviewslider/>
     </>
   )
 }
