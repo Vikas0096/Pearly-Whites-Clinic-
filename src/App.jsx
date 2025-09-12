@@ -7,6 +7,7 @@ import Disease from './component/Disease'
 import Facilities from './component/Facilities'
 import AboutDoctor from './component/AboutDoctor'
 import PatientReview from './component/PatientReview'
+import Award from './component/Award'
 
 
 
@@ -28,6 +29,7 @@ function App() {
   <Facilities/>
   <AboutDoctor/>
     <PatientReview/>
+    <Award/>
     </>
   )
 }

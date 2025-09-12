@@ -14,6 +14,12 @@ import DentalXrays from './Dental X-rays.jpeg'
 import OralHygieneEducation from './Oral Hygiene Education.png'
 import DentalExaminations  from './Dental Examinations & Consultations.webp'
 import ProfessionalTeethCleaning from './Professional Teeth Cleaning.jpeg'
+import award1 from './award1.jpg'
+import award2 from './award2.jpg'
+import award3 from './award3.jpg'
+import award4 from './award4.jpg'
+import award5 from './award5.jpg'
+import award6 from './award6.webp'
 
 
 
@@ -33,7 +39,13 @@ export const assets = {
   DentalXrays,
   OralHygieneEducation,
   DentalExaminations,
-  ProfessionalTeethCleaning
+  ProfessionalTeethCleaning,
+  award1,
+  award2,
+  award3,
+  award4,
+  award5,
+  award6
 
 }
 
@@ -139,6 +151,38 @@ export const patientReviews = [
     avatar: 'https://placehold.co/100x100/D1FAE5/065F46?text=RK',
     review: 'I was nervous about my procedure, but the team here was so reassuring and gentle. The facility is modern and clean. I felt I was in the best hands.',
   },
+];
+
+export const awards = [ {
+    id: 1,
+    location: "New York",
+    img: award1
+  },
+  {
+    id: 2,
+    location: "Paris",
+    img: award2
+  },
+  {
+    id: 3,
+    location: "Tokyo",
+    img: award3
+  },
+  {
+    id: 4,
+    location: "London",
+    img: award4
+  },
+  {
+    id: 5,
+    location: "Sydney",
+    img: award5
+  },
+  {
+    id: 6,
+    location: "Dubai",
+    img: award6
+  }
 ];
 
 
