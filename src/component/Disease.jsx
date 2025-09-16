@@ -36,7 +36,7 @@ const Disease = ({ innerRef }) => {
       </div>
       <p className="mt-3 text-base font-light">
         {data.description}{' '}
-        <Link to="/treatment" className="font-medium text-green-700 underline hover:text-primary" >
+        <Link className="font-medium text-green-700 underline hover:text-primary" >
           Read more »
         </Link>
       </p>
