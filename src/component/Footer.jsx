@@ -1,22 +1,12 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
-const Footer = ({ innerRef, scrollRefs }) => {
-  const handleScroll = (ref) => {
-    if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
+const Footer = ({groupRefs}) => {
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
-    <div ref={innerRef} className="container">
+    <div className="container" >
       <footer className="w-full bg-primary text-gray-300 py-10 mt-10">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
  
@@ -36,29 +26,29 @@ const Footer = ({ innerRef, scrollRefs }) => {
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button onClick={scrollToTop} className="hover:text-white">
+                <Link to={'/'}  className="hover:text-white">
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => handleScroll(scrollRefs.aboutRef)} className="hover:text-white">
+                <Link to={'aboutus'} className="hover:text-white">
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => handleScroll(scrollRefs.facilitiesRef)} className="hover:text-white">
+                <Link to={'facilities'} className="hover:text-white">
                   Facilities
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => handleScroll(scrollRefs.treatmentRef)} className="hover:text-white">
+                <Link to={'treatment'} className="hover:text-white">
                   Treatment
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => handleScroll(scrollRefs.awardRef)} className="hover:text-white">
+                <Link to={'award'} className="hover:text-white">
                   Award
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

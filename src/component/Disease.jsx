@@ -1,11 +1,12 @@
 import React from 'react';
-import { diseaseData } from '../assets/assets'; 
 import { Link } from 'react-router-dom';
+import { diseaseData } from '../assets/assets'; 
+import Treatment from '../pages/Treatment';
 
-const Disease = ({ innerRef }) => {
+const Disease = () => {
   return (
     <>
-      <div className="container my-14 px-4" ref={innerRef}>
+      <div className="container my-14 px-4" >
   
         <div>
           <h2 className="text-3xl text-center font-semibold text-primary md:text-4xl mb-10 max-w-[600px] mx-auto">
@@ -36,7 +37,7 @@ const Disease = ({ innerRef }) => {
       </div>
       <p className="mt-3 text-base font-light">
         {data.description}{' '}
-        <Link className="font-medium text-green-700 underline hover:text-primary" >
+        <Link to={'/treatment'} className="font-medium text-green-700 underline hover:text-primary" >
           Read more »
         </Link>
       </p>

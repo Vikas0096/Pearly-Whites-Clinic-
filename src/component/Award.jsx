@@ -1,6 +1,6 @@
 import React from 'react'
 import { awards } from '../assets/assets'
-const Award = ({innerRef}) => {
+const Award = () => {
   return (
 <>
 <div className="container my-14 px-4">
@@ -10,7 +10,7 @@ const Award = ({innerRef}) => {
           </h2>
 
 
-<div className="flex flex-wrap justify-center gap-8" ref={innerRef}>
+<div className="flex flex-wrap justify-center gap-8" >
   
   {awards.map((data) => (
     <div

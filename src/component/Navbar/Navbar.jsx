@@ -1,26 +1,11 @@
 import React from "react";
 
 import { assets } from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 function Navbar({ scrollRefs }) {
   const [open, setOpen] = React.useState(false);
-const handleScroll = (ref) => {
-    if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-   
-    setOpen(false);
-    
-  };
 
-
-    const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-    setOpen(false); 
-  };
   
 
   return (
@@ -28,9 +13,9 @@ const handleScroll = (ref) => {
       <div className="container ">
         <div className="w-full bg-primary text-sm max-w-7xl mx-auto flex flex-row items-center justify-between px-4 py-3">
 
-          <button onClick={scrollToTop} className="flex-shrink-0">
+          <Link to={'/'}  className="flex-shrink-0">
             <img src={assets.drlogo} alt="Logo" className="h-12 w-auto md:h-20" />
-          </button>
+          </Link>
 
           <div className="hidden md:flex flex-col text-white text-left">
             <span className="text-lg sm:text-xl md:text-2xl font-semibold">
@@ -60,35 +45,36 @@ const handleScroll = (ref) => {
 
       <nav className="sticky text-lg top-0 z-50 font-semibold flex items-center justify-between px-4 sm:px-8 lg:px-16 py-3 border-b border-gray-200 bg-white shadow-sm transition-all">
 
-
+        <Link to={'/'}>
           <img
             src={assets.logo}
             alt="Logo"
             className="h-10 w-auto sm:h-12 lg:h-14"
-            onClick={scrollToTop}
+              
           />
+          </Link>
 
 
         <div className="hidden md:flex items-center gap-6 text-primary text-sm lg:text-base">
-          <button  className="hover:text-secondary hover:underline transition" onClick={scrollToTop}>
+          <Link to={'/'}  className="hover:text-secondary hover:underline transition"   >
             Home
-          </button>
+          </Link>
           
-          <button onClick={() => handleScroll(scrollRefs.treatmentRef)} className="hover:text-secondary hover:underline transition">
+          <Link to={'/treatment'}  className="hover:text-secondary hover:underline transition">
             Treatment
-          </button>
-          <button onClick={() => handleScroll(scrollRefs.facilitiesRef)}  className="hover:text-secondary hover:underline transition">
+          </Link>
+          <Link to={'facilities'}   className="hover:text-secondary hover:underline transition">
             Facilities
-          </button>
-          <button onClick={() => handleScroll(scrollRefs.awardRef)} className="hover:text-secondary hover:underline transition">
+          </Link>
+          <Link to={'award'}  className="hover:text-secondary hover:underline transition">
             Awards
-          </button>
-          <button onClick={() => handleScroll(scrollRefs.aboutRef)} className="hover:text-secondary hover:underline transition">
+          </Link>
+          <Link to={'aboutus'}  className="hover:text-secondary hover:underline transition">
             About Us
-          </button>
-          <button onClick={() => handleScroll(scrollRefs.footerRef)} className="hover:text-secondary hover:underline transition">
+          </Link>
+          <Link to={'contactus'}  className="hover:text-secondary hover:underline transition">
             Contact
-          </button>
+          </Link>
         </div>
 
         <button
@@ -132,25 +118,25 @@ const handleScroll = (ref) => {
               : "hidden opacity-0 -translate-y-4"
           }`}
         >
-          <button onClick={scrollToTop} className="w-full transition hover:bg-[#88b3ce]">
+          <Link to={'/'}    className="w-full transition hover:bg-[#88b3ce]">
             Home
-          </button>
+          </Link>
           
-          <button onClick={() => handleScroll(scrollRefs.treatmentRef)} className="w-full transition hover:bg-[#88b3ce]">
+          <Link to={'treatment'}  className="w-full transition hover:bg-[#88b3ce]">
             Treatment
-          </button>
-          <button onClick={() => handleScroll(scrollRefs.facilitiesRef)}  className="w-full transition hover:bg-[#88b3ce]">
+          </Link>
+          <Link to={'facilities'}  className="w-full transition hover:bg-[#88b3ce]">
             Facilities
-          </button>
-          <button onClick={() => handleScroll(scrollRefs.awardRef)} className="w-full transition hover:bg-[#88b3ce]">
+          </Link>
+          <Link to={'award'} className="w-full transition hover:bg-[#88b3ce]">
             Awards
-          </button>
-          <button  className="w-full transition hover:bg-[#88b3ce]" onClick={() => handleScroll(scrollRefs.aboutRef)}>
+          </Link>
+          <Link to={'aboutus'} className="w-full transition hover:bg-[#88b3ce]" >
             About Us
-          </button>
-          <button  className="w-full transition hover:bg-[#88b3ce]" onClick={() => handleScroll(scrollRefs.footerRef)}>
+          </Link>
+          <Link to={'contactus'} className="w-full transition hover:bg-[#88b3ce]" >
             Contact
-          </button>
+          </Link>
         </div>
       </nav>
      </div> </>

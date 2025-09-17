@@ -1,10 +1,10 @@
 import React from 'react'
 import { facilitiesdata } from '../assets/assets'; 
 
-const Facilities = ({innerRef}) => {
+const Facilities = () => {
   return (
 <>
-    <div className="container" ref={innerRef}>
+    <div className="container" >
        <h2 className="text-3xl text-center font-semibold text-primary md:text-4xl mb-10 max-w-[600px] mx-auto">
             Facilities we offer
       </h2>

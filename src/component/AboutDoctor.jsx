@@ -1,10 +1,10 @@
 import React from 'react';
 import { assets } from '../assets/assets';
 
-const AboutDoctor = ({innerRef}) => {
+const AboutDoctor = () => {
   return (
     <>
-    <div className="container my-14 px-4" ref={innerRef}>
+    <div className="container my-14 px-4" >
      <h2 className="text-3xl text-center font-semibold text-primary md:text-4xl mb-10 max-w-[600px] mx-auto">
           About us
           </h2>
