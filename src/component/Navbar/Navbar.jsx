@@ -118,23 +118,23 @@ function Navbar({setShowLogin}) {
               : "hidden opacity-0 -translate-y-4"
           }`}
         >
-          <Link to={'/'}    className="w-full transition hover:bg-[#88b3ce]">
+          <Link to={'/'} onClick={() => setOpen(false)}    className="w-full transition hover:bg-[#88b3ce]">
             Home
           </Link>
           
-          <Link to={'treatment'}  className="w-full transition hover:bg-[#88b3ce]">
+          <Link to={'treatment'} onClick={() => setOpen(false)} className="w-full transition hover:bg-[#88b3ce]">
             Treatment
           </Link>
-          <Link to={'facilities'}  className="w-full transition hover:bg-[#88b3ce]">
+          <Link to={'facilities'} onClick={() => setOpen(false)}  className="w-full transition hover:bg-[#88b3ce]">
             Facilities
           </Link>
-          <Link to={'award'} className="w-full transition hover:bg-[#88b3ce]">
+          <Link to={'award'} onClick={() => setOpen(false)} className="w-full transition hover:bg-[#88b3ce]">
             Awards
           </Link>
-          <Link to={'aboutus'} className="w-full transition hover:bg-[#88b3ce]" >
+          <Link to={'aboutus'} onClick={() => setOpen(false)} className="w-full transition hover:bg-[#88b3ce]" >
             About us
           </Link>
-          <Link to={'contactus'} className="w-full transition hover:bg-[#88b3ce]" >
+          <Link to={'contactus'} onClick={() => setOpen(false)} className="w-full transition hover:bg-[#88b3ce]" >
             Contact us
           </Link>
         </div>
