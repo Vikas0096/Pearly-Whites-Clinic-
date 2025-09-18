@@ -4,7 +4,7 @@ import './App.css';
 
 import Home from './pages/Home';
 import Treatment from './pages/Treatment';
-import Navbar from './component/navbar/Navbar';
+import Navbar from './component/Navbar/Navbar';
 import Footer from './component/Footer';
 import Facilities from './component/Facilities';
 import Award from './component/Award';
