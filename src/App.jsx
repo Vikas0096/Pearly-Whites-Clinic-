@@ -10,11 +10,15 @@ import Facilities from './component/Facilities';
 import Award from './component/Award';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import Booking from './pages/Booking';
 
 function App() {
+    const[showLogin,setShowLogin]=useState(false)
+
   return (
     <>
-      <Navbar />
+      <Navbar setShowLogin={setShowLogin}/>
+      {showLogin?<Booking setShowLogin={setShowLogin}/>:<></>}
       <div className="min-h-[70vh]">
         <Routes>
           <Route path="/" element={<Home />} />

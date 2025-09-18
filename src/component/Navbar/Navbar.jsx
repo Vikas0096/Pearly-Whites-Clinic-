@@ -3,7 +3,7 @@ import React from "react";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
 
-function Navbar({ scrollRefs }) {
+function Navbar({setShowLogin}) {
   const [open, setOpen] = React.useState(false);
 
   
@@ -36,7 +36,7 @@ function Navbar({ scrollRefs }) {
               </a>
             </div>
 
-            <button className="cursor-pointer animate-pulse text-red-500 hover:text-white hover:bg-red-500 text-sm sm:text-base md:text-lg lg:text-xl font-bold border border-red-500 px-3 py-1 rounded-md transition duration-300">
+            <button onClick={() => setShowLogin(true)} className="cursor-pointer animate-pulse text-red-500 hover:text-white hover:bg-red-500 text-sm sm:text-base md:text-lg lg:text-xl font-bold border border-red-500 px-3 py-1 rounded-md transition duration-300">
               Book an Appointment
             </button>
           </div>
@@ -70,10 +70,10 @@ function Navbar({ scrollRefs }) {
             Awards
           </Link>
           <Link to={'aboutus'}  className="hover:text-secondary hover:underline transition">
-            About Us
+            About us
           </Link>
           <Link to={'contactus'}  className="hover:text-secondary hover:underline transition">
-            Contact
+            Contact us
           </Link>
         </div>
 
@@ -132,10 +132,10 @@ function Navbar({ scrollRefs }) {
             Awards
           </Link>
           <Link to={'aboutus'} className="w-full transition hover:bg-[#88b3ce]" >
-            About Us
+            About us
           </Link>
           <Link to={'contactus'} className="w-full transition hover:bg-[#88b3ce]" >
-            Contact
+            Contact us
           </Link>
         </div>
       </nav>
